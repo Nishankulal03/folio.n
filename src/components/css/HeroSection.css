@@ -1,0 +1,45 @@
+.neon-button {
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.neon-button:hover {
+  background-color: #39ff14;
+  color: black;
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+@keyframes popup {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-effect {
+  animation: popup 0.6s ease-out forwards;
+}
+
+
+@keyframes popupHover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.hero-image-hover:hover {
+  animation: popupHover 0.3s ease-out forwards;
+}
